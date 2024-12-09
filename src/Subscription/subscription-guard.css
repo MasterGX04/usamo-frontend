@@ -1,0 +1,34 @@
+.subscription-guard {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.subscription-guard h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.subscription-guard p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.subscription-guard button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #0070ba;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscription-guard button:hover {
+    background-color: #005a94;
+}

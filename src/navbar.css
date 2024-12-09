@@ -1,0 +1,138 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #333, #000);
+    padding: 15px 30px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+  }
+
+.navbar-brand .brand-name {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between each link */
+    position: relative;
+  }
+
+.dropdown {
+    position: relative;
+    z-index: 1001;
+}
+
+.dropdown-toggle {
+    background: none;
+    color: #fff;
+    border: 2px solid transparent;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    -webkit-text-stroke-width: 2px #fff solid;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #1f1f1f, #000);
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 15px;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px 2px linear-gradient(to right, red, blue);
+    z-index: 1001;
+}
+
+.dropdown-section {
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.dropdown-section p {
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.dropdown-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-section ul li {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.dropdown-section ul li a {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.dropdown-section ul li a:hover {
+    text-decoration: underline;
+    background: linear-gradient(90deg, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blur {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+}
+
+.login-button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-end {
+    margin-right: 10%; /* Right margin for the Sign Up button */
+}
+
+.login-button:hover {
+    background: linear-gradient(90deg, #ff0000, #0000ff);
+    color: #fff;
+}
+
+.login-button:active {
+    background: linear-gradient(90deg, #002244, #001122); /* Subtle gradient for active click */
+    color: #cccccc; /* Dimmed text color */
+    border: 2px solid #002244; /* Border to match background */
+    transform: scale(0.95); /* Shrink effect on click */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+}

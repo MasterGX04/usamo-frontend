@@ -1,0 +1,19 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full width */
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.content-container {
+    flex: 1;
+    position: relative;
+    transition: filter 0.3s ease; /* Smooth blur transition */
+}
+
+.content-container.blur {
+    filter: blur(4px); /* Apply blur effect */
+}

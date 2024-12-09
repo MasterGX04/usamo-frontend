@@ -1,0 +1,70 @@
+.discussion-board {
+    width: 80%;
+    margin: 20px auto;
+    color: white;
+}
+
+/* Action buttons */
+.discussion-board-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.green-button, .red-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.green-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+.green-button:hover {
+    background-color: #45a049;
+}
+
+.red-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.red-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Post styles */
+.discussion-board-posts {
+    margin-top: 20px;
+}
+
+.discussion-board-post {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.discussion-board-post h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.discussion-board-post p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.discussion-board-post small {
+    color: #888;
+    font-size: 14px;
+}

@@ -1,0 +1,31 @@
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between logo and text */
+  background-color: #ffffff; /* White background */
+  color: #757575; /* Google gray text color */
+  border: 1px solid #d9d9d9; /* Light gray border */
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.google-button:hover {
+  background-color: #f7f7f7; /* Slightly darker background on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.google-button:active {
+  background-color: #ececec; /* Even darker background on click */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Slightly reduced shadow */
+}
+
+.google-logo {
+  width: 20px; /* Adjust logo size */
+  height: 20px;
+}

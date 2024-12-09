@@ -1,0 +1,184 @@
+.create-post-form {
+    background-color: #333; /* Dark grey background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+/* Styles for each input and textarea */
+.create-post-input,
+.create-post-textarea{
+    width: 95%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid white; /* White border outline */
+    background-color: #444; /* Slightly lighter grey background */
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.create-post-textarea {
+    width: 95%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid white;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    overflow-y: auto;
+    max-height: 500px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    position: relative;
+    overflow: visible;
+}
+
+.create-post-textarea img {
+    max-width: 100%;
+    height: auto;
+    resize: both;
+    overflow: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.create-post-textarea {
+    overflow-y: auto;
+    max-height: 700px;
+}
+
+.create-post-image-preview {
+    display: block;
+    max-width: 100%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Change border color when focusing on inputs */
+.create-post-input:focus,
+.create-post-textarea:focus,
+.create-post-file:focus {
+    outline: none;
+    border-color: #00bcd4; /* Light blue for focus */
+}
+
+/* Button styles */
+.create-post-button {
+    width: 48%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #00bcd4; /* Light blue background */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for button */
+.create-post-button:hover {
+    background-color: #0097a7; /* Darker blue on hover */
+}
+
+.create-post-cancel-button {
+    background-color: #f44336;
+    color: white;
+    margin-left: 4%;
+}
+
+.create-post-cancel-button:hover {
+    background-color: #d32f2f;
+}
+
+.resizable-image {
+    max-width: 100%; /* Prevent overflow */
+    height: auto;
+    resize: both; /* Allow resizing */
+    overflow: hidden;
+    display: inline-block;
+    cursor: grab; /* Allow dragging */
+    margin: 5px; /* Add spacing around the image */
+}
+
+.resize-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: blue; /* Make the handles blue */
+    border-radius: 50%; /* Circular handles */
+    z-index: 20; 
+}
+
+.resize-handle.top-left {
+    top: 5px;
+    left: -5px;
+    cursor: nwse-resize;
+}
+
+.resize-handle.top-right {
+    top: 5px;
+    right: -5px;
+    cursor: nesw-resize;
+}
+
+
+.resize-handle.bottom-left {
+    bottom: 5px;
+    left: -5px;
+    cursor: nesw-resize;
+}
+
+.resize-handle.bottom-right {
+    bottom: 5px;
+    right: -5px;
+    cursor: nwse-resize;
+}
+
+.box-resize-handle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    border: none;
+    cursor: nwse-resize;
+    z-index: 10;
+    outline: none; /* Remove focus outline */
+    padding: 0;
+}
+
+div[tabindex] {
+    outline: none;
+}
+
+/* Highlighted image */
+img[contenteditable="false"]:focus,
+img[contenteditable="false"]:hover {
+    outline: 2px solid blue;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    .create-post-form {
+        padding: 15px;
+    }
+
+    .create-post-input,
+    .create-post-textarea,
+    .create-post-file {
+        font-size: 14px;
+    }
+
+    .create-post-button {
+        font-size: 16px;
+    }
+}
